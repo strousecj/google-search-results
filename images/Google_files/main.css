@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 20px;
+    white-space: nowrap;
+    height: 50px;
+}
+
+li {
+    float: left;
+    padding: 15px 0;
+}
+
+.li-right{
+    float: right;
+}
+
+a {
+    display: block;
+    color: #000000;
+    padding: 8px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#sign-in-button {
+    color: white;
+    background-color: rgb(66, 133, 244);
+    border: 1px solid rgb(66, 133, 244);
+    border-radius: 2px;
+    padding: 7px 12px;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+main {
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1 1 0%;
+}
+
+#google-logo {
+    display: block;
+    justify-content: center;
+    width: 272px;
+    height: 92px;
+    margin: 0 auto;
+    padding: 109px 0 50px 0;
+}
+
+#searchform {
+    padding: 50px;
+}
+
+.search-bar {
+    border: 1px solid rgb(223, 225, 229);
+    border-radius: 24px;
+}
+
+#main-search-field {
+    width: 500px;
+    height: 34px;
+    margin: auto;
+}
+
+#search-buttons {
+    padding-top: 18px;
+    height: 70px;
+}
+
+#search-buttons button {
+    display: inline-block;
+    font-size: 13px;
+    color: rgb(95, 99, 104);
+    background-color: rgb(242, 242, 242);
+    padding: 0 16px;
+    height: 36px;
+    width: 127px;
+    margin: 11px 4px;
+    text-align: center;
+    align-items: flex-start;
+    border: 1px solid rgb(242, 242, 242);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: rgb(242, 242, 242);
+}
+
+footer a {
+    color: rgb(95, 99, 104);
+}

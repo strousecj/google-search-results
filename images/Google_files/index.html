@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Google</title>
+    <meta name="description" content="Recreation of the Google homepage for practice">
+    <meta name="keywords" content="google html css">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Store</a></li>
+            <li class="li-right"><a href="#"><button id="sign-in-button">Sign in</button></a></li>
+            <li class="li-right"><a href="#"><img src="#"></a></li>
+            <li class="li-right"><a href="#">Images</a></li>
+            <li class="li-right"><a href="#">Gmail</a></li>  
+        </ul>
+    </header>
+
+    <main>
+        <div id="searchform">
+            <img id="google-logo" src="images/google-logo.png" alt="Colorful Google logo">
+            <div class="flex-container flex-center ">
+                <input id="main-search-field" class="search-bar" type="search" name="search-field" value="" title="Search">
+            </div>
+            <div id="search-buttons" class="flex-container flex-center">
+                <button id="google-search">Google Search</button>
+                <button id="feeling-lucky">I'm Feeling Lucky</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="#">Advertising</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">How Search works</a></li>
+            <li class="li-right"><a href="#">Settings</a></li>
+            <li class="li-right"><a href="#">Terms</a></li>
+            <li class="li-right"><a href="#">Privacy</a></li>  
+        </ul>
+    </footer>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+</html>
