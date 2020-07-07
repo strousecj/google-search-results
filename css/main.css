@@ -6,8 +6,16 @@ body {
     flex-direction: column;
 }
 
+strong {
+    font-weight: bold;
+}
+
 h1 {
   font-size: 20px;  
+}
+
+h2 {
+    font-size: 20px;
 }
 
 ul {
@@ -66,11 +74,12 @@ a:hover {
 main {
     display: block;
     flex: 1;
+    padding: 0 0 0 190px;
 }
 
 #results-count {
     color: rgb(95, 99, 104);
-    margin: 0 0 20px 190px;
+    margin: 0 0 20px 0px;
 }
 
 #results-set {
@@ -81,11 +90,9 @@ main {
 
 .result-url {
     color: #000000;
-    margin: 0 0 0 190px;
 }
 
 .result-title {
-    margin: 0 0 0 190px;
 }
 
 .result-title a {
@@ -102,11 +109,14 @@ main {
 }
 
 .result-text {
-    margin: 0 0 0 190px;
 }
 
 .gray-text {
     color: rgb(95, 99, 104);
+}
+
+.dark-gray-text {
+    color: #444444;
 }
 
 .flex-center {
@@ -122,7 +132,6 @@ main {
 }
 
 #video-section {
-    margin: 0 0 0 190px;
     padding: 10px 0;
 }
 
@@ -197,12 +206,45 @@ main {
     white-space: nowrap;
 }
 
+#related-searches-container {
+    margin-top: 20px;
+}
+
+.related-searches {
+    column-count: 2;
+    column-gap: 40px;
+    width: 600px;
+    margin: 20px 0;
+}
+
+.related-searches a {
+    padding: 5px 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#page-navigation {
+    text-align: center;
+}
+
 footer {
     background-color: rgb(242, 242, 242);
     border: 1px solid rgb(242, 242, 242);
+    padding: 0 0 0 190px;
 }
 
-footer a {
+footer p {
+    font-size: 15px;
+    color: rgb(95, 99, 104);
+    padding: 8px 0;
+}
+
+footer a:visited {
     color: rgb(95, 99, 104);
     font-size: 15px;
+}
+
+footer ul, a {
+    padding: 8px 22px 8px 0;
+    margin: 0;
 }
