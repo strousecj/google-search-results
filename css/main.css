@@ -82,7 +82,7 @@ main {
     margin: 0 0 20px 0px;
 }
 
-#results-set {
+.results-set {
     width: 800px;
     line-height: 20px;
     padding: 10px 0;
