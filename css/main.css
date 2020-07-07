@@ -221,10 +221,15 @@ main {
     padding: 5px 0;
     font-weight: bold;
     font-size: 14px;
+    color: #1a0dab;   
 }
 
 #page-navigation {
     text-align: center;
+}
+
+#page-navigation a {
+    color: #1a0dab;   
 }
 
 footer {
